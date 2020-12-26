@@ -75,10 +75,20 @@ a {
 	height: 150px;
 	float: left;
 	margin-left: 10px;
+	animation: gearmove 15s infinite linear;
 	-webkit-animation: gearmove 15s infinite linear;
 	-moz-animation: gearmove 15s infinite linear;
 	-o-animation: gearmove 15s infinite linear;
 	-ms-animation: gearmove 15s infinite linear;
+}
+
+@keyframes gearmove {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
 }
 
 @-webkit-keyframes gearmove {
@@ -117,15 +127,6 @@ a {
 	}
 }
 
-@-keyframes gearmove {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
 .slide-up-boxes a {
 	display: block;
 	height: 130px;
@@ -142,6 +143,7 @@ a {
 	height: 70px;
 	font: italic 18px/70px Georgia, Serif; /* Vertically center text by making line height equal to height */
 	opacity: 1;
+	transition: all 0.2s linear;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
@@ -159,6 +161,8 @@ a {
 	height: 55px;
 	padding: 10px;
 	opacity: 0;
+	transform: rotate(125deg);
+	transition: all 0.4s linear;
 	-webkit-transform: rotate(125deg);
 	-webkit-transition: all 0.4s linear;
 	-moz-transform: rotate(125deg);
@@ -174,6 +178,8 @@ a {
 	height: 55px;
 	padding: 10px;
 	opacity: 0;
+	transform: rotate(125deg);
+	transition: all 0.4s linear;
 	-webkit-transform: rotate(125deg);
 	-webkit-transition: all 0.4s linear;
 	-moz-transform: rotate(125deg);
@@ -189,6 +195,8 @@ a {
 	height: 55px;
 	padding: 10px;
 	opacity: 0;
+	transform: rotate(125deg);
+	transition: all 0.4s linear;
 	-webkit-transform: rotate(125deg);
 	-webkit-transition: all 0.4s linear;
 	-moz-transform: rotate(125deg);
@@ -204,6 +212,8 @@ a {
 	height: 55px;
 	padding: 10px;
 	opacity: 0;
+	transform: rotate(125deg);
+	transition: all 0.4s linear;
 	-webkit-transform: rotate(125deg);
 	-webkit-transition: all 0.4s linear;
 	-moz-transform: rotate(125deg);
@@ -214,6 +224,7 @@ a {
 
 .slide-up-boxes a:hover div#box1 {
 	opacity: 1;
+	transform: rotate(0);
 	-webkit-transform: rotate(0);
 	-moz-transform: rotate(0);
 	-o-transform: rotate(0);
@@ -221,6 +232,7 @@ a {
 
 .slide-up-boxes a:hover div#box2 {
 	opacity: 1;
+	transform: rotate(0);
 	-webkit-transform: rotate(0);
 	-moz-transform: rotate(0);
 	-o-transform: rotate(0);
@@ -228,6 +240,7 @@ a {
 
 .slide-up-boxes a:hover div#box3 {
 	opacity: 1;
+	transform: rotate(0);
 	-webkit-transform: rotate(0);
 	-moz-transform: rotate(0);
 	-o-transform: rotate(0);
@@ -235,6 +248,7 @@ a {
 
 .slide-up-boxes a:hover div#box4 {
 	opacity: 1;
+	transform: rotate(0);
 	-webkit-transform: rotate(0);
 	-moz-transform: rotate(0);
 	-o-transform: rotate(0);
